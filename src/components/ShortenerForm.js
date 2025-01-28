@@ -14,7 +14,7 @@ const ShortenerForm = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("https://url-production-42af.up.railway.app/api/shorten", {
+      const response = await axios.post("https://url-production-42af.up.railway.app/shorten", {
         originalUrl,
       });
       setShortUrl(response.data.shortUrl);
